@@ -1,0 +1,138 @@
+@import "css/normalize.css";
+@import "css/fonts.css";
+
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+.weather{
+    padding-top: 180px;
+    height: 650px;
+    .container{
+        width: 600px ;
+        height: 435px ;
+        margin: 0 auto;
+        background-color: red;
+        .weather_form{
+            form{
+                input{
+                    padding-left: 10px;
+                    width: 600px;
+                    height: 32px;
+                }
+                .search{
+                    position: absolute;
+                    right: 145px
+                }
+
+            }
+        }
+        .weather_main{
+            display: flex;
+            .main_tabs{
+                width: 298px;
+                height: 404px ;
+                background-color: white;
+                border: 1px solid #000000;
+                border-top: none;
+                .tabs_body{
+                    .tabs_block{
+                        position: relative;
+                        height: 360px;
+                        display: none;
+                    }
+                    .tabs_block:first-child{
+
+                    }
+                    .tabs_block:first-child:before{
+                        background-color: rgba(255, 0, 0, 0.63);
+                    }
+                    .tabs_block:last-child:before{
+                        background-color: rgba(255, 0, 0, 0.63);
+                        left:197px;
+                    }
+                    .tabs_block:nth-child(2):before{
+                        background-color: rgba(255, 0, 0, 0.63);
+                        left:98px;
+                    }
+                    .tabs_block:last-child{
+                        background-color: gold;
+                    }
+                    .tabs_block:nth-child(2){
+                        background-color: aqua;
+                    }
+                    .tabs_block:target{
+                        display: block;
+                    }
+                    .tabs_block:before{
+                        content: "";
+                        width: 100px;
+                        height: 44px;
+                        position: absolute;
+                        bottom: -44px;
+
+                    }
+                }
+                .tabs_items{
+                    display: flex;
+                    align-content: center;
+                    .tabs_items {
+
+                    }
+                    }
+                    a{
+                        text-align: center;
+                        line-height: 40px;
+                        border: 1px;
+                        width: 100px;
+                        height: 44px;
+                        display: block;
+                        text-decoration: none;
+                        color: black;
+                        border-top: 1px solid #000000;
+                        span{
+                            position: relative;
+                            z-index: 2;
+                    }
+                    a:first-child{
+                        border-right: 1px solid #000000;
+                    }
+                    a:last-child{
+                        border-left: 1px solid #000000;
+                    }
+                    a:hover{
+                        background-color: #5b5959;
+                        color: white;
+                    }
+                }
+
+            }
+            .main_locations{
+                width: 304px;
+                height: 404px ;
+                background-color: white;
+                border: 1px solid #000000;
+                border-top: none;
+                border-left: none ;
+                .locations_added{
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    font-size: 24px;
+                    text-align: left;
+                    color: rgb(0, 0, 0);
+                    height: 67px;
+                    border-bottom: 1px solid #000000;
+                }
+                .locations{
+                    font-size: 24px;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    .locations_value{
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
